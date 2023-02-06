@@ -1,21 +1,20 @@
-import ReactDOM from "react-dom/client";
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Accueil from './pages/accueil';
+import Header from './components/Header';
+import SideBar from './components/SideBar';
+import { Body } from './components/Body';
+
 
 function App() {
   return (
-    <BrowserRouter>
     <div className="App">
-  
-
-      <Routes>
-                 <Route exact path='/accueil' element={< Accueil />}></Route>
-                
-          </Routes>
+      <div className="layout overflow-hidden">
+        <Header/>
+      
+        <SideBar/>
+        <Body/>
+      </div>
     </div>
-    </BrowserRouter>
   );
 }
 
