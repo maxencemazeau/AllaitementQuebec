@@ -1,11 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import Accueil from './pages/accueil';
+import Header from './components/Header';
+import SideBar from './components/SideBar';
+import { Body } from './components/Body';
+import Navbar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <Accueil/>
+      <div className="layout overflow-hidden">
+        <Header/>
+        <Navbar/>
+        <SideBar/>
+        <Body/>
+      </div>
     </div>
   );
 }
