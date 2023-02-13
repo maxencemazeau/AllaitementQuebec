@@ -1,0 +1,48 @@
+@media screen and (min-width: 780px) {
+    .logoimage {
+    max-width: 100px;
+    width: 100px;
+    }
+    
+    .elementor-sticky--effects .logoimage {
+    max-width: 40px;
+    width: 40px;
+    transition: 0.5s all ease-in-out;
+    }
+    
+    }
+    
+    .logoimage {
+    max-width: 50px;
+    width: 50px;
+    /* background-color: white; */
+    position: absolute;
+    left: 48%;
+    bottom: 18%;
+    }
+    
+    .elementor-sticky--effects .logoimage {
+    max-width: 40px;
+    width: 40px;
+    transition: 0.5s all ease-in-out;
+    }
+    
+    selector{
+        background-color: #31312F;
+    }
+
+    .line
+    {
+        position: relative;
+        left: 35%;
+        border-left: 1px dashed white;
+        height: 30px;
+    }
+
+    .Drop
+    {
+        color: white;
+        background-color: none;
+        
+        text-decoration: none;
+    }
