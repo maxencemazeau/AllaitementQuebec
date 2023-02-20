@@ -6,6 +6,12 @@ import { Body } from './components/Body';
 import { FaHome } from "react-icons/fa";
 import Dropdown from 'react-bootstrap/Dropdown';
 
+import ConnexionParent from '../src/components/Parent/Connexion/Connexion';
+import InscriptionParent from '../src/components/Parent/Inscription/Inscription';
+import ConnexionBenevole from '../src/components/Benevole/Connexion/Connexion';
+import InscriptionBenevole from '../src/components/Benevole/Inscription/Inscription';
+import CreationActivite from '../src/components/Activite/CreationActivite/Creation';
+
 function App() {
   return (
     <div className="App">
