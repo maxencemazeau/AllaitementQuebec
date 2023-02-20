@@ -69,9 +69,10 @@ function App() {
   </div>
 </nav>
       <div className="layout overflow-hidden">
-        <Header/>
+        {/* <Header/>
         <SideBar/>
-        <Body/>
+        <Body/> */}
+        <ConnexionBenevole></ConnexionBenevole>
       </div>
     </div>
   );
