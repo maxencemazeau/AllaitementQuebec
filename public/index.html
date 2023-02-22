@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+
+    <title>Allaitement Québec</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/allaitement/Logo.png" type="image/x-icon">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link class="css-lt" rel="stylesheet" href="./assets/css/template.bundle.css" media="(prefers-color-scheme: light)">
+    <link class="css-dk" rel="stylesheet" href="./assets/css/template.dark.bundle.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="./assets/css/style.css" >
+ 
+
+
+    <!-- Theme mode -->
+    <script>
+        if (localStorage.getItem('color-scheme')) {
+            let scheme = localStorage.getItem('color-scheme');
+
+            const LTCSS = document.querySelectorAll('link[class=css-lt]');
+            const DKCSS = document.querySelectorAll('link[class=css-dk]');
+
+            [...LTCSS].forEach((link) => {
+                link.media = (scheme === 'light') ? 'all' : 'not all';
+            });
+
+            [...DKCSS].forEach((link) => {
+                link.media = (scheme === 'dark') ? 'all' : 'not all';
+            });
+        }
+    </script>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
