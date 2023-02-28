@@ -5,13 +5,22 @@ import SideBar from './components/SideBar';
 import { Body } from './components/Body';
 import { FaHome } from "react-icons/fa";
 import Dropdown from 'react-bootstrap/Dropdown';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 
 import InscriptionParent from '../src/components/Parent/Inscription/Inscription';
 import ConnexionUtilisateur from '../src/components/Connexion/Connexion';
 import InscriptionBenevole from '../src/components/Benevole/Inscription/Inscription';
 import CreationActivite from '../src/components/Activite/CreationActivite/Creation';
-
+import CreerChat from './components/ChatParent/CreerChat';
+import Chat from './components/ChatParent/Chat';
+ 
 function App() {
   return (
     <div className="App">
@@ -72,7 +81,25 @@ function App() {
         {/* <Header/>
         <SideBar/>
         <Body/> */}
-        <ConnexionUtilisateur></ConnexionUtilisateur>
+         <Router>
+      <div>
+        <nav>
+          <ul>
+          <li> <Link to="/CreerChat">Creer Chat</Link></li>
+          </ul>
+        </nav>
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Routes>
+        <Route path="/Chat" element={<Chat />}></Route>
+
+          <Route path="/CreerChat" element={<CreerChat />}></Route>
+        </Routes>
+         
+      </div>
+    </Router>
+        
       </div>
     </div>
   );
