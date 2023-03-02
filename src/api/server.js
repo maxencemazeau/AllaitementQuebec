@@ -2,6 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 const cors = require ('cors');
 const app = express();
+const bodyParser = require('body-parser')
 const port = process.env.PORT || 8080
 
 
@@ -29,10 +30,16 @@ const corsOptions ={
 app.use(cors(corsOptions));
 
 // JSON body parser, there is no `extended` option here
-app.use(express.json());
+//app.use(express.json());
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
 
 // URL-encoded body parser
-app.use(express.urlencoded({ limit: "20mb", extended: true }));
+//app.use(express.urlencoded({ limit: "20mb", extended: false }));
 
 app.get('/activite', function(req, res, next){ 
     res.locals.connection.query('Select * from activite', function(error, results, fields){
@@ -76,7 +83,7 @@ app.get('/chat', function(req, res, next){
 });
 
 app.post('/creerChat', (req, res) => {
-    const { idParent } = req.body;
+  const{ idParent } = req.body;
   const dateDebut = new Date();
   const sql = 'INSERT INTO chat (dateDebut, idParent) VALUES (?, ?)';
   res.locals.connection.query(sql, [dateDebut, idParent], (err, result) => {
@@ -91,8 +98,8 @@ app.post('/creerChat', (req, res) => {
 });
 
 app.get('/discussion/:idParent', (req, res) =>{
-    const idParent = req.params.idParent;
-    const query = 'SELECT message FROM discussion d INNER JOIN chat c ON d.idChat = c.id WHERE c.idParent = ? ORDER BY d.moment';
+    const { idParent } = req.body;
+    const query = 'SELECT message, moment FROM discussion d INNER JOIN chat c ON d.idChat = c.id WHERE c.idParent = ? ORDER BY d.moment';
     res.locals.connection.query(query, [idParent], (error, results) => {
         if (error) throw error;
         res.json(results);
@@ -112,5 +119,30 @@ app.post('/postDiscussion', (req, res) =>{
     }
     console.log('Data inserted');
     res.send();
+  });
+});
+
+
+app.post('/connexionParent', function(req, res){
+  const { login, password } = req.body;
+  
+  // SQL query to check if user exists and password is correct
+  const query = `SELECT * FROM parent WHERE login = '${login}' AND password = '${password}'`;
+
+  // Execute the SQL query
+  res.locals.connection.query(query, function(err, rows) {
+    if (err) {
+      console.log(err);
+      res.status(500).send('Internal server error');
+    } else if (rows.length == 0) {
+      res.status(401).send('Invalid username or password');
+    } else {
+      const parent = rows[0];
+      // Successful login, send back the user data
+      res.send({
+        id: parent.id,
+        login: parent.login,
+        nom: parent.nom});
+    }
   });
 });

@@ -20,6 +20,7 @@ import InscriptionBenevole from '../src/components/Benevole/Inscription/Inscript
 import CreationActivite from '../src/components/Activite/CreationActivite/Creation';
 import CreerChat from './components/ChatParent/CreerChat';
 import Chat from './components/ChatParent/Chat';
+import Connexion from '../src/components/Connexion/Connexion';
  
 function App() {
   return (
@@ -86,6 +87,7 @@ function App() {
         <nav>
           <ul>
           <li> <Link to="/CreerChat">Creer Chat</Link></li>
+          <li><Link to="/Connexion">Connexion</Link></li>
           </ul>
         </nav>
 
@@ -93,6 +95,7 @@ function App() {
             renders the first one that matches the current URL. */}
         <Routes>
         <Route path="/Chat" element={<Chat />}></Route>
+        <Route path="/Connexion" element={<Connexion />}></Route>
 
           <Route path="/CreerChat" element={<CreerChat />}></Route>
         </Routes>

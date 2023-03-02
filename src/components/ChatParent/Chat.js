@@ -3,8 +3,6 @@ import axios from 'axios';
 
 export default function Chat (){ 
 
-   
-
     const [data, setData] = useState([]);
     const [messages, setMessages] = useState([]);
     const input = useRef();
@@ -14,9 +12,8 @@ export default function Chat (){
        axios.get(`http://localhost:8080/discussion/${1}`)
         .then(res => setMessages(res.data))
         .catch(err => console.log(err));
+
     }, []); 
-   
-   
 
     
     const Envoie = () => {
@@ -38,7 +35,7 @@ export default function Chat (){
                 {messages.map(messages => (
                 <div key={messages.id}>
                     <p>{messages.message}</p>
-                    <p></p>
+                    <p>{new Date(messages.moment).toLocaleTimeString()}</p>
                 </div>
              ))}
             </ul>
