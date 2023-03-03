@@ -7,7 +7,6 @@ import {
 
 export default function CreerChat(){
 
-    const location = useLocation();
     const parent = JSON.parse(sessionStorage.getItem('parent'));
     console.log(parent.id);
     const idParent = JSON.stringify(parent.id);;

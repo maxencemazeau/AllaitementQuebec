@@ -20,11 +20,9 @@ function Connexion() {
     const password = inputPassword.current.value; 
     console.log(login);
     console.log(password);
-    setData(login);
-    setData(password);
     axios.post("http://localhost:8080/connexionParent", {login, password}).then((response) =>{ 
        sessionStorage.setItem('parent', JSON.stringify(response.data));
-      navigate('/creerChat');
+      navigate('/TableauDeBord');
       });
 
 

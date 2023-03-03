@@ -41,6 +41,9 @@ app.use(bodyParser.json())
 // URL-encoded body parser
 //app.use(express.urlencoded({ limit: "20mb", extended: false }));
 
+
+//API pour gérer les ACTIVITES
+
 app.get('/activite', function(req, res, next){ 
     res.locals.connection.query('Select * from activite', function(error, results, fields){
         if (error) throw error;
@@ -75,10 +78,28 @@ app.post('/creerActivite', (req, res) => {
   });
 });
 
+//API pour gérer le CHAT
+
 app.get('/chat', function(req, res, next){ 
   res.locals.connection.query('Select * from chat', function(error, results, fields){
       if (error) throw error;
       res.json(results);
+  })
+});
+
+app.put('/chatFini/:id', function(req, res){
+  const id = req.params.id;
+  const dateFin = new Date();
+
+  const sql = `UPDATE chat SET dateFin = ? WHERE id = ?`;
+  res.locals.connection.query(sql, [dateFin, id], (err, results) => {
+    if (err) {
+      console.error('Error updating data: ', err);
+      res.status(500).send('Error updating data');
+      return;
+    } else {
+      res.send();
+    }
   })
 });
 
@@ -97,8 +118,10 @@ app.post('/creerChat', (req, res) => {
   });
 });
 
+//API pour gérer la DISCUSSION
+
 app.get('/discussion/:idParent', (req, res) =>{
-    const { idParent } = req.body;
+    const idParent = req.params.idParent;
     const query = 'SELECT message, moment FROM discussion d INNER JOIN chat c ON d.idChat = c.id WHERE c.idParent = ? ORDER BY d.moment';
     res.locals.connection.query(query, [idParent], (error, results) => {
         if (error) throw error;
@@ -122,6 +145,8 @@ app.post('/postDiscussion', (req, res) =>{
   });
 });
 
+
+//API CONNEXION PARENT
 
 app.post('/connexionParent', function(req, res){
   const { login, password } = req.body;

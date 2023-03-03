@@ -9,8 +9,9 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
+import axios from "axios";
 
 
 
@@ -21,8 +22,19 @@ import CreationActivite from '../src/components/Activite/CreationActivite/Creati
 import CreerChat from './components/ChatParent/CreerChat';
 import Chat from './components/ChatParent/Chat';
 import Connexion from '../src/components/Connexion/Connexion';
+import TableauDeBord from './components/Parent/Inscription/TableauDeBord';
  
 function App() {
+
+  const id = 66;
+
+  const Deconnexion = () => {
+    axios.put(`http://localhost:8080/chatFini/${id}`);
+    sessionStorage.clear();
+    window.location.href = '/Connexion';
+    console.log("Session clear");
+  }
+  
   return (
     <div className="App">
       <nav class="navbar navbar-expand-lg navbar-light  " style={{ backgroundColor: 'rgba(61, 72, 139, 1)', padding: "1.2%" }}>
@@ -86,18 +98,19 @@ function App() {
       <div>
         <nav>
           <ul>
-          <li> <Link to="/CreerChat">Creer Chat</Link></li>
+          
           <li><Link to="/Connexion">Connexion</Link></li>
+          <button onClick={Deconnexion}>Deconnexion</button>
           </ul>
         </nav>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Routes>
-        <Route path="/Chat" element={<Chat />}></Route>
-        <Route path="/Connexion" element={<Connexion />}></Route>
-
+          <Route path="/Chat" element={<Chat />}></Route>
+          <Route path="/Connexion" element={<Connexion />}></Route>  
           <Route path="/CreerChat" element={<CreerChat />}></Route>
+          <Route path="/TableauDeBord" element={<TableauDeBord />}></Route>
         </Routes>
          
       </div>

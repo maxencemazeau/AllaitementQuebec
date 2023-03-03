@@ -6,10 +6,11 @@ export default function Chat (){
     const [data, setData] = useState([]);
     const [messages, setMessages] = useState([]);
     const input = useRef();
-    
+    const parent = JSON.parse(sessionStorage.getItem('parent'));
+    const idParent = JSON.stringify(parent.id);;
 
    useEffect(() =>{
-       axios.get(`http://localhost:8080/discussion/${1}`)
+       axios.get(`http://localhost:8080/discussion/${idParent}`)
         .then(res => setMessages(res.data))
         .catch(err => console.log(err));
 
