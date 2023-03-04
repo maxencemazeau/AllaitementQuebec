@@ -9,7 +9,6 @@ export default function CreerChat(){
 
     const parent = JSON.parse(sessionStorage.getItem('parent'));
     console.log(parent.id);
-    const idParent = JSON.stringify(parent.id);;
     const navigate = useNavigate();
 
    
@@ -17,7 +16,7 @@ export default function CreerChat(){
 
     const creerChat = async (e) => {
         e.preventDefault();
-        await axios.post(`http://localhost:8080/creerChat`, { idParent });
+        await axios.post(`http://localhost:8080/creerChat`);
         
         navigate("/Chat");
     }

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import axios from 'axios';
 
+
 export default function Chat (){ 
 
     const [data, setData] = useState([]);
@@ -10,7 +11,15 @@ export default function Chat (){
     const idParent = JSON.stringify(parent.id);;
 
    useEffect(() =>{
-       axios.get(`http://localhost:8080/discussion/${idParent}`)
+       const fetch = async() =>{
+        const res =  await axios.get('http://localhost:8080/dernierChat');
+        console.log(res.data[0].id);
+        const idChat = res.data[0].id;
+        sessionStorage.setItem('chat', idChat);
+       } 
+       fetch();
+       
+        axios.get(`http://localhost:8080/discussion/${idParent}`)
         .then(res => setMessages(res.data))
         .catch(err => console.log(err));
 
@@ -26,7 +35,9 @@ export default function Chat (){
     }
 
     const sendData = (message) => {
-        axios.post('http://localhost:8080/postDiscussion', {message})
+        const idChat = sessionStorage.getItem('chat');
+        console.log(idChat);
+        axios.post('http://localhost:8080/postDiscussion', {message, idParent, idChat})
     }
        
         return(

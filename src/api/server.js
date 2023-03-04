@@ -104,10 +104,9 @@ app.put('/chatFini/:id', function(req, res){
 });
 
 app.post('/creerChat', (req, res) => {
-  const{ idParent } = req.body;
   const dateDebut = new Date();
-  const sql = 'INSERT INTO chat (dateDebut, idParent) VALUES (?, ?)';
-  res.locals.connection.query(sql, [dateDebut, idParent], (err, result) => {
+  const sql = 'INSERT INTO chat (dateDebut) VALUES (?)';
+  res.locals.connection.query(sql, [dateDebut], (err, result) => {
     if (err) {
       console.error('Error inserting data: ', err);
       res.status(500).send('Error inserting data');
@@ -118,11 +117,18 @@ app.post('/creerChat', (req, res) => {
   });
 });
 
-//API pour gérer la DISCUSSION
+app.get('/dernierChat', (req, res) => {
+  res.locals.connection.query('SELECT id FROM chat ORDER BY dateDebut DESC LIMIT 1', function(error, results, fields){
+    if (error) throw error;
+    res.send(results);
+})
+});
 
+
+//API pour gérer la DISCUSSION
 app.get('/discussion/:idParent', (req, res) =>{
     const idParent = req.params.idParent;
-    const query = 'SELECT message, moment FROM discussion d INNER JOIN chat c ON d.idChat = c.id WHERE c.idParent = ? ORDER BY d.moment';
+    const query = 'SELECT message, moment FROM discussion d WHERE d.idParent = ? ORDER BY d.moment';
     res.locals.connection.query(query, [idParent], (error, results) => {
         if (error) throw error;
         res.json(results);
@@ -130,11 +136,10 @@ app.get('/discussion/:idParent', (req, res) =>{
 });
 
 app.post('/postDiscussion', (req, res) =>{
-  const idChat = 64;
   const moment = new Date();
-  const { message } = req.body;
-  const sql = 'INSERT INTO discussion (message, moment, idChat) values(?, ?, ?)';
-  res.locals.connection.query(sql, [message, moment, idChat], (err, result) => {
+  const { message, idParent, idChat } = req.body;
+  const sql = 'INSERT INTO discussion (message, moment, idChat, idParent) values(?, ?, ?, ?)';
+  res.locals.connection.query(sql, [message, moment, idChat, idParent], (err, result) => {
     if (err) {
       console.error('Error inserting data: ', err);
       res.status(500).send('Error inserting data');
