@@ -21,9 +21,10 @@ import InscriptionBenevole from '../src/components/Benevole/Inscription/Inscript
 import CreationActivite from '../src/components/Activite/CreationActivite/Creation';
 import CreerChat from './components/ChatParent/CreerChat';
 import Chat from './components/ChatParent/Chat';
+import Chat2 from './components/Benevole/chatBenevole/Chat2';
 import Connexion from '../src/components/Connexion/Connexion';
-import TableauDeBord from './components/Parent/Inscription/TableauDeBord';
- 
+import TableauDeBord from './components/Benevole/chatBenevole/TableauDeBord';
+import TableauDeBordChat from './components/Benevole/chatBenevole/TableauDeBordChat';
 function App() {
 
   const id = 66;
@@ -108,9 +109,11 @@ function App() {
             renders the first one that matches the current URL. */}
         <Routes>
           <Route path="/Chat" element={<Chat />}></Route>
+          <Route path="/Chat2" element={<Chat2 />}></Route>
           <Route path="/Connexion" element={<Connexion />}></Route>  
           <Route path="/CreerChat" element={<CreerChat />}></Route>
           <Route path="/TableauDeBord" element={<TableauDeBord />}></Route>
+          <Route path="/TableauDeBordChat" element={<TableauDeBordChat />}></Route>
         </Routes>
          
       </div>

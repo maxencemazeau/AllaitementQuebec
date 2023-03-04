@@ -104,10 +104,10 @@ app.put('/chatFini/:id', function(req, res){
 });
 
 app.post('/creerChat', (req, res) => {
-  const{ idParent } = req.body;
+  // const{ idParent } = req.body;
   const dateDebut = new Date();
-  const sql = 'INSERT INTO chat (dateDebut, idParent) VALUES (?, ?)';
-  res.locals.connection.query(sql, [dateDebut, idParent], (err, result) => {
+  const sql = 'INSERT INTO chat (dateDebut) VALUES (?)';
+  res.locals.connection.query(sql, [dateDebut], (err, result) => {
     if (err) {
       console.error('Error inserting data: ', err);
       res.status(500).send('Error inserting data');
@@ -170,4 +170,46 @@ app.post('/connexionParent', function(req, res){
         nom: parent.nom});
     }
   });
+});
+
+
+app.post('/connexionBenevole', function(req, res){
+  const { login, password } = req.body;
+  
+  // SQL query to check if user exists and password is correct
+  const query = `SELECT * FROM benevole WHERE login = '${login}' AND password = '${password}'`;
+
+  // Execute the SQL query
+  res.locals.connection.query(query, function(err, rows) {
+    if (err) {
+      console.log(err);
+      res.status(500).send('Internal server error');
+    } else if (rows.length == 0) {
+      res.status(401).send('Invalid username or password');
+    } else {
+      const parent = rows[0];
+      // Successful login, send back the user data
+      res.send({
+        id: parent.id,
+        login: parent.login,
+        nom: parent.nom});
+    }
+  });
+});
+
+
+app.get('/obtenirChat', function(req, res, next){ 
+  res.locals.connection.query('Select id, dateDebut from chat', function(error, results, fields){
+      if (error) throw error;
+      res.json(results);
+  })
+});
+
+app.get('/discussionBenevole/:idChat', (req, res) =>{
+  const idChat = req.params.idChat;
+  const query = 'SELECT message, moment FROM discussion  WHERE idChat ='+idChat +' ORDER BY moment';
+  res.locals.connection.query(query, [idChat],(error, results) => {
+      if (error) throw error;
+      res.json(results);
+    });
 });

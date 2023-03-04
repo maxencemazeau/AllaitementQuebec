@@ -20,8 +20,8 @@ function Connexion() {
     const password = inputPassword.current.value; 
     console.log(login);
     console.log(password);
-    axios.post("http://localhost:8080/connexionParent", {login, password}).then((response) =>{ 
-       sessionStorage.setItem('parent', JSON.stringify(response.data));
+    axios.post("http://localhost:8080/connexionBenevole", {login, password}).then((response) =>{ 
+       sessionStorage.setItem('benevole', JSON.stringify(response.data));
       navigate('/TableauDeBord');
       });
 
