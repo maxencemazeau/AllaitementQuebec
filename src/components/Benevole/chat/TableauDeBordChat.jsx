@@ -11,8 +11,8 @@ export default function TableauDeBordChat(){
     return(
         <div>
             <h1>Tableau de bord benevole</h1>
-            {/* <h1>{this.params.id}</h1> */}
-           <Chat2 id={6} />
+            <h1>{this.params.id}</h1>
+            <Chat2/> 
         </div>
     );
 }

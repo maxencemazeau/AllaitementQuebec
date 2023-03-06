@@ -21,7 +21,11 @@ function Connexion() {
     console.log(login);
     console.log(password);
     axios.post("http://localhost:8080/connexionBenevole", {login, password}).then((response) =>{ 
-       sessionStorage.setItem('benevole', JSON.stringify(response.data));
+
+
+      sessionStorage.setItem('benevole', JSON.stringify(response.data));
+
+
       navigate('/TableauDeBord');
       });
 

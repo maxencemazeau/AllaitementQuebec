@@ -213,3 +213,22 @@ app.get('/discussionBenevole/:idChat', (req, res) =>{
       res.json(results);
     });
 });
+
+app.post('/api/benevole/envoiMessage', (req, res) =>{
+  const idChat = req.body.idChat;
+  // const idBenevole = req.body.idBenevole;
+  const message = req.body.message;
+  const moment = new Date();
+  const sql = 'INSERT INTO discussion (message,  idChat,moment) values(?,?,?)';
+  
+  res.locals.connection.query(sql, [message,  idChat,moment], (err, result) => {
+    if (err) {
+      console.error('Error inserting data: ', err);
+      res.status(500).send('Error inserting data');
+      return;
+    }
+    console.log('Data inserted');
+    res.send();
+  });
+  
+});
