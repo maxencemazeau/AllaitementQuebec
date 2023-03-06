@@ -1,20 +1,31 @@
-import React, { useState } from "react";
-import axios from "axios";
-import { useNavigate } from 'react-router-dom';
-import ObtenirChat2 from "./obtenirChat2";
-import Chat2 from "./Chat2";
+import '../../../App';
+import React, { Component } from "react";
+import Chat from './chat';
+import ListChat from './listChat';
+// import Nav from '../../interfaces/Navbar'
+export default class TableauDeBord extends Component {
+  state = {
+    idChatSelectionne: 7
+  }
 
-export default function TableauDeBord(){
+  //
+  ChangerId = (id) => {
+    this.setState({idChatSelectionne : id})
+    console.log("chatid ", this.state.idChatSelectionne)
+  }
 
-    const session = JSON.parse(sessionStorage.getItem('benevole'));
-    console.log(session);
-
-
-    return(
-        <div>
-            <h1>Tableau de bord benevole</h1>
-           <ObtenirChat2/>
-           <Chat2/>
+  render() {
+    return (
+      <React.Fragment>
+        <div className="App">
+          {/* <Nav /> */}
+          <body>
+            <ListChat changerId={this.ChangerId} />
+            <Chat idChatSelectionne={this.state.idChatSelectionne}/>
+          </body>
         </div>
+      </React.Fragment>
     );
+  }
 }
+

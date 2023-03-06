@@ -198,7 +198,7 @@ app.post('/api/Benevole/connexionBenevole', function(req, res){
 });
 
 
-app.get('/api/Benevole/obtenirChat', function(req, res, next){ 
+app.get('/obtenirChat', function(req, res, next){ 
   res.locals.connection.query('Select id, dateDebut from chat', function(error, results, fields){
       if (error) throw error;
       res.json(results);
@@ -214,7 +214,7 @@ app.get('/discussionBenevole/:idChat', (req, res) =>{
     });
 });
 
-app.post('/api/benevole/envoiMessage', (req, res) =>{
+app.post('/envoiMessage', (req, res) =>{
   const idChat = req.body.idChat;
   // const idBenevole = req.body.idBenevole;
   const message = req.body.message;

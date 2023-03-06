@@ -12,10 +12,9 @@ import InscriptionParent from '../src/components/Parent/Inscription/Inscription'
 import ConnexionUtilisateur from '../src/components/Connexion/Connexion';
 import InscriptionBenevole from '../src/components/Benevole/Inscription/Inscription';
 import CreationActivite from '../src/components/Activite/CreationActivite/Creation';
-import Chat2 from './components/Benevole/chat/Chat2';
 import Connexion from '../src/components/Connexion/Connexion';
 import TableauDeBord from './components/Benevole/chat/TableauDeBord';
-import TableauDeBordChat from './components/Benevole/chat/TableauDeBordChat';
+
 
 
 function App() {
@@ -42,10 +41,10 @@ function App() {
             </nav>
 
             <Routes>
-              <Route path="/Chat2" element={<Chat2 />}></Route>
+             
               <Route path="/Connexion" element={<Connexion />}></Route>
               <Route path="/TableauDeBord" element={<TableauDeBord />}></Route>
-              <Route path="/TableauDeBordChat" element={<TableauDeBordChat />}></Route>
+             
             </Routes>
 
           </div>
