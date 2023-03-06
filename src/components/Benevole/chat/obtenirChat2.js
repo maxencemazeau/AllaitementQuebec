@@ -15,7 +15,7 @@ export default class ObtenirChat extends Component {
 
   componentDidMount()
   {
-    axios.get('http://localhost:8080/obtenirChat')
+    axios.get('http://localhost:8080/api/Benevole/obtenirChat')
     .then(res =>{
       this.setState({ chat : res.data
     })

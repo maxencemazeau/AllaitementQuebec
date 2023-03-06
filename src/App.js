@@ -6,7 +6,7 @@ import SideBar from './components//interfaces/SideBar';
 import { Body } from './components/interfaces/Body';
 import { FaHome } from "react-icons/fa";
 import Dropdown from 'react-bootstrap/Dropdown';
-import { BrowserRouter as Router,Routes,Route,Link, } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
 import axios from "axios";
 import InscriptionParent from '../src/components/Parent/Inscription/Inscription';
 import ConnexionUtilisateur from '../src/components/Connexion/Connexion';
@@ -29,7 +29,6 @@ function App() {
   }
 
   return (
-
     <div className="App">
       <div >
         <Navbar />
@@ -55,5 +54,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
