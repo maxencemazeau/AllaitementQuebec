@@ -29,25 +29,22 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
+      <div className="App2">
+        <Header />
+        <SideBar />
+        <Body />
+      </div>
       <div >
-        <Navbar />
-        {/* <Header/>
-        <SideBar/>
-        <Body/> */}
         <Router>
           <div>
-            <nav>
               <ul>
                 <li><Link to="/Connexion">Connexion</Link></li>
                 <button onClick={Deconnexion}>Deconnexion</button>
               </ul>
-            </nav>
-
             <Routes>
-             
               <Route path="/Connexion" element={<Connexion />}></Route>
               <Route path="/TableauDeBordChatBenevole" element={<TableauDeBordChatBenevole />}></Route>
-             
             </Routes>
 
           </div>
