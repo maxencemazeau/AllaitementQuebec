@@ -26,9 +26,10 @@ export default class TableauDeBord extends Component {
           <body>
             <ListChat changerId={this.ChangerId} />
             <Chat idChatSelectionne={this.state.idChatSelectionne}/>
+            {/* <Header></Header>
             <SideBar></SideBar>
-            <Header></Header>
-            <Body></Body>
+           
+            <Body></Body> */}
           </body>
         </div>
       </React.Fragment>

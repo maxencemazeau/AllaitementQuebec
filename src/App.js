@@ -31,6 +31,9 @@ function App() {
     <div className="App">
       <div >
         <Navbar />
+        {/* <Header/>
+        <SideBar/>
+        <Body/> */}
         <Router>
           <div>
             <nav>
