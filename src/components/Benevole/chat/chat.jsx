@@ -40,13 +40,10 @@ export default class Chat extends Component {
                         <tr>
                             <th>message:</th>
                         </tr>
-
                         {discussion.map(message => <tr>
                             <td>{message.message}</td>
-
                         </tr>)}
                     </table>
-
                 </div>
                 <div className="main">
                     <form action="http://localhost:8080/api/benevole/envoiMessage" method="post">

@@ -13,7 +13,7 @@ import ConnexionUtilisateur from '../src/components/Connexion/Connexion';
 import InscriptionBenevole from '../src/components/Benevole/Inscription/Inscription';
 import CreationActivite from '../src/components/Activite/CreationActivite/Creation';
 import Connexion from '../src/components/Connexion/Connexion';
-import TableauDeBord from './components/Benevole/chat/TableauDeBord';
+import TableauDeBordChatBenevole from './components/Benevole/chat/TableauDeBordChatBenevole';
 
 
 
@@ -43,7 +43,7 @@ function App() {
             <Routes>
              
               <Route path="/Connexion" element={<Connexion />}></Route>
-              <Route path="/TableauDeBord" element={<TableauDeBord />}></Route>
+              <Route path="/TableauDeBordChatBenevole" element={<TableauDeBordChatBenevole />}></Route>
              
             </Routes>
 

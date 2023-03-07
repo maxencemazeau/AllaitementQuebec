@@ -13,56 +13,49 @@ function Connexion() {
   const inputLogin = useRef();
   const inputPassword = useRef();
 
-  
+
   const Connecter = (e) => {
     e.preventDefault();
     const login = inputLogin.current.value;
-    const password = inputPassword.current.value; 
+    const password = inputPassword.current.value;
     console.log(login);
     console.log(password);
-    axios.post("http://localhost:8080/api/Benevole/connexionBenevole", {login, password}).then((response) =>{ 
-
-
+    axios.post("http://localhost:8080/api/Benevole/connexionBenevole", { login, password }).then((response) => {
       sessionStorage.setItem('benevole', JSON.stringify(response.data));
-
-
-      navigate('/TableauDeBord');
-      });
-
-
-    
+      navigate('/TableauDeBordChatBenevole');
+    });
     //navigate("/creerChat");
   }
 
   return (
     <div className="main">
 
-          
-          <div className="sub-main">
-          <form action='post' onSubmit={Connecter}>
-            <div className='input-div'>
-              <h2>Connexion Parent</h2>
-             
-              <div >
-                <input type="text" placeholder="Entrez Votre Login" className="input" ref={inputLogin}/><br></br>
-                <input type="password" placeholder="Entrez Votre Mot de passe" className="input" ref={inputPassword}/>
-              </div>
-              <div className="login-button">
-                <button type='submit'>Connexion</button>
-              </div>
-              
-              <p className="link">
-                 <a>s'inscrire</a> 
-              </p>
 
+      <div className="sub-main">
+        <form action='post' onSubmit={Connecter}>
+          <div className='input-div'>
+            <h2>Connexion Parent</h2>
 
+            <div >
+              <input type="text" placeholder="Entrez Votre Login" className="input" ref={inputLogin} /><br></br>
+              <input type="password" placeholder="Entrez Votre Mot de passe" className="input" ref={inputPassword} />
             </div>
-            </form>
+            <div className="login-button">
+              <button type='submit'>Connexion</button>
+            </div>
+
+            <p className="link">
+              <a>s'inscrire</a>
+            </p>
+
+
           </div>
-          
-          <div >
-              < img className="sub-main2" src={imageBebe} alt="imageBebe" />
-          </div>
+        </form>
+      </div>
+
+      <div >
+        < img className="sub-main2" src={imageBebe} alt="imageBebe" />
+      </div>
     </div>
   );
 }
