@@ -12,12 +12,12 @@ export class SideBar extends Component {
 
                                 <div className="container py-8">
 
-                              
+
                                     <div className="mb-8">
                                         <h2 className="fw-bold m-0">Création d'un chat</h2>
                                     </div>
 
-                            
+
                                     <div className="mb-6">
                                         <div className="mb-5">
                                             <form action="#">
@@ -28,7 +28,7 @@ export class SideBar extends Component {
                                                         </div>
                                                     </div>
 
-                                                    <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..."/>
+                                                    <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..." />
                                                 </div>
                                             </form>
                                         </div>
@@ -54,7 +54,7 @@ export class SideBar extends Component {
                                             <div className="card border-0">
                                                 <div className="profile">
                                                     <div className="profile-img text-primary rounded-top">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 400 140.74"><defs><style dangerouslySetInnerHTML={{__html: ".cls-2{fill:#fff;opacity:0.1;}" }} /></defs><g><g><path d="M400,125A1278.49,1278.49,0,0,1,0,125V0H400Z" /><path className="cls-2" d="M361.13,128c.07.83.15,1.65.27,2.46h0Q380.73,128,400,125V87l-1,0a38,38,0,0,0-38,38c0,.86,0,1.71.09,2.55C361.11,127.72,361.12,127.88,361.13,128Z" /><path className="cls-2" d="M12.14,119.53c.07.79.15,1.57.26,2.34v0c.13.84.28,1.66.46,2.48l.07.3c.18.8.39,1.59.62,2.37h0q33.09,4.88,66.36,8,.58-1,1.09-2l.09-.18a36.35,36.35,0,0,0,1.81-4.24l.08-.24q.33-.94.6-1.9l.12-.41a36.26,36.26,0,0,0,.91-4.42c0-.19,0-.37.07-.56q.11-.86.18-1.73c0-.21,0-.42,0-.63,0-.75.08-1.51.08-2.28a36.5,36.5,0,0,0-73,0c0,.83,0,1.64.09,2.45C12.1,119.15,12.12,119.34,12.14,119.53Z" /><circle className="cls-2" cx="94.5" cy="57.5" r="22.5" /><path className="cls-2" d="M276,0a43,43,0,0,0,43,43A43,43,0,0,0,362,0Z" /></g></g></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 400 140.74"><defs><style dangerouslySetInnerHTML={{ __html: ".cls-2{fill:#fff;opacity:0.1;}" }} /></defs><g><g><path d="M400,125A1278.49,1278.49,0,0,1,0,125V0H400Z" /><path className="cls-2" d="M361.13,128c.07.83.15,1.65.27,2.46h0Q380.73,128,400,125V87l-1,0a38,38,0,0,0-38,38c0,.86,0,1.71.09,2.55C361.11,127.72,361.12,127.88,361.13,128Z" /><path className="cls-2" d="M12.14,119.53c.07.79.15,1.57.26,2.34v0c.13.84.28,1.66.46,2.48l.07.3c.18.8.39,1.59.62,2.37h0q33.09,4.88,66.36,8,.58-1,1.09-2l.09-.18a36.35,36.35,0,0,0,1.81-4.24l.08-.24q.33-.94.6-1.9l.12-.41a36.26,36.26,0,0,0,.91-4.42c0-.19,0-.37.07-.56q.11-.86.18-1.73c0-.21,0-.42,0-.63,0-.75.08-1.51.08-2.28a36.5,36.5,0,0,0-73,0c0,.83,0,1.64.09,2.45C12.1,119.15,12.12,119.34,12.14,119.53Z" /><circle className="cls-2" cx="94.5" cy="57.5" r="22.5" /><path className="cls-2" d="M276,0a43,43,0,0,0,43,43A43,43,0,0,0,362,0Z" /></g></g></svg>
                                                     </div>
 
                                                     <div className="profile-body p-0">
@@ -67,7 +67,7 @@ export class SideBar extends Component {
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                                                             </div>
 
-                                                            <input id="upload-chat-img" className="d-none" type="file"/>
+                                                            <input id="upload-chat-img" className="d-none" type="file" />
                                                             <label className="stretched-label mb-0" htmlFor="upload-chat-img"></label>
                                                         </div>
                                                     </div>
@@ -78,13 +78,13 @@ export class SideBar extends Component {
                                                         <div className="row gy-6">
                                                             <div className="col-12">
                                                                 <div className="form-floating">
-                                                                    <input type="text" className="form-control" id="floatingInput" placeholder="Enter a chat name"/>
+                                                                    <input type="text" className="form-control" id="floatingInput" placeholder="Enter a chat name" />
                                                                     <label htmlFor="floatingInput">Enter group name</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-12">
                                                                 <div className="form-floating">
-                                                                    <textarea className="form-control" placeholder="Description" id="floatingTextarea" rows="8" data-autosize="true" style={{"minHeight": 100}}></textarea>
+                                                                    <textarea className="form-control" placeholder="Description" id="floatingTextarea" rows="8" data-autosize="true" style={{ "minHeight": 100 }}></textarea>
                                                                     <label htmlFor="floatingTextarea">What's your purpose?</label>
                                                                 </div>
                                                             </div>
@@ -97,7 +97,7 @@ export class SideBar extends Component {
                                                 <small className="text-muted me-auto">Enter chat name and add an optional photo.</small>
                                             </div>
 
-                  
+
                                             <div className="mt-8">
                                                 <div className="d-flex align-items-center mb-4 px-6">
                                                     <small className="text-muted me-auto">Options</small>
@@ -117,7 +117,7 @@ export class SideBar extends Component {
                                                             </div>
                                                             <div className="col-auto align-self-center">
                                                                 <div className="form-check form-switch ps-0">
-                                                                    <input className="form-check-input" type="checkbox" id="new-chat-options-1"/>
+                                                                    <input className="form-check-input" type="checkbox" id="new-chat-options-1" />
                                                                     <label className="form-check-label" htmlFor="new-chat-options-1"></label>
                                                                 </div>
                                                             </div>
@@ -133,17 +133,17 @@ export class SideBar extends Component {
                                                     <small className="text-uppercase text-muted">B</small>
                                                 </div>
 
-                                         
+
                                                 <div className="card border-0 mt-5">
                                                     <div className="card-body">
 
                                                         <div className="row align-items-center gx-5">
                                                             <div className="col-auto">
                                                                 <div className="avatar ">
-                                                                    
-                                                                        <img className="avatar-img" src="assets/img/avatars/6.jpg" alt=""/>
-                                                                    
-                                                                    
+
+                                                                    <img className="avatar-img" src="assets/img/avatars/6.jpg" alt="" />
+
+
                                                                 </div>
                                                             </div>
                                                             <div className="col">
@@ -152,7 +152,7 @@ export class SideBar extends Component {
                                                             </div>
                                                             <div className="col-auto">
                                                                 <div className="form-check">
-                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-1"/>
+                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-1" />
                                                                     <label className="form-check-label" htmlFor="id-member-1"></label>
                                                                 </div>
                                                             </div>
@@ -160,23 +160,23 @@ export class SideBar extends Component {
                                                         <label className="stretched-label" htmlFor="id-member-1"></label>
                                                     </div>
                                                 </div>
-                                     
+
 
                                                 <div className="my-5">
                                                     <small className="text-uppercase text-muted">D</small>
                                                 </div>
 
-                                          
+
                                                 <div className="card border-0 mt-5">
                                                     <div className="card-body">
 
                                                         <div className="row align-items-center gx-5">
                                                             <div className="col-auto">
                                                                 <div className="avatar ">
-                                                                    
-                                                                        <img className="avatar-img" src="assets/img/avatars/5.jpg" alt=""/>
-                                                                    
-                                                                    
+
+                                                                    <img className="avatar-img" src="assets/img/avatars/5.jpg" alt="" />
+
+
                                                                 </div>
                                                             </div>
                                                             <div className="col">
@@ -185,7 +185,7 @@ export class SideBar extends Component {
                                                             </div>
                                                             <div className="col-auto">
                                                                 <div className="form-check">
-                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-2"/>
+                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-2" />
                                                                     <label className="form-check-label" htmlFor="id-member-2"></label>
                                                                 </div>
                                                             </div>
@@ -193,17 +193,17 @@ export class SideBar extends Component {
                                                         <label className="stretched-label" htmlFor="id-member-2"></label>
                                                     </div>
                                                 </div>
-                                        
+
                                                 <div className="card border-0 mt-5">
                                                     <div className="card-body">
 
                                                         <div className="row align-items-center gx-5">
                                                             <div className="col-auto">
                                                                 <div className="avatar avatar-online">
-                                                                    
-                                                                    
-                                                                        <span className="avatar-text">D</span>
-                                                                    
+
+
+                                                                    <span className="avatar-text">D</span>
+
                                                                 </div>
                                                             </div>
                                                             <div className="col">
@@ -212,7 +212,7 @@ export class SideBar extends Component {
                                                             </div>
                                                             <div className="col-auto">
                                                                 <div className="form-check">
-                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-3"/>
+                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-3" />
                                                                     <label className="form-check-label" htmlFor="id-member-3"></label>
                                                                 </div>
                                                             </div>
@@ -220,22 +220,22 @@ export class SideBar extends Component {
                                                         <label className="stretched-label" htmlFor="id-member-3"></label>
                                                     </div>
                                                 </div>
-                                            
+
                                                 <div className="my-5">
                                                     <small className="text-uppercase text-muted">E</small>
                                                 </div>
 
-                                            
+
                                                 <div className="card border-0 mt-5">
                                                     <div className="card-body">
 
                                                         <div className="row align-items-center gx-5">
                                                             <div className="col-auto">
                                                                 <div className="avatar avatar-online">
-                                                                    
-                                                                        <img className="avatar-img" src="assets/img/avatars/8.jpg" alt=""/>
-                                                                    
-                                                                    
+
+                                                                    <img className="avatar-img" src="assets/img/avatars/8.jpg" alt="" />
+
+
                                                                 </div>
                                                             </div>
                                                             <div className="col">
@@ -244,7 +244,7 @@ export class SideBar extends Component {
                                                             </div>
                                                             <div className="col-auto">
                                                                 <div className="form-check">
-                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-4"/>
+                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-4" />
                                                                     <label className="form-check-label" htmlFor="id-member-4"></label>
                                                                 </div>
                                                             </div>
@@ -252,23 +252,23 @@ export class SideBar extends Component {
                                                         <label className="stretched-label" htmlFor="id-member-4"></label>
                                                     </div>
                                                 </div>
-                                          
+
 
                                                 <div className="my-5">
                                                     <small className="text-uppercase text-muted">M</small>
                                                 </div>
 
-                                             
+
                                                 <div className="card border-0 mt-5">
                                                     <div className="card-body">
 
                                                         <div className="row align-items-center gx-5">
                                                             <div className="col-auto">
                                                                 <div className="avatar ">
-                                                                    
-                                                                    
-                                                                        <span className="avatar-text">M</span>
-                                                                    
+
+
+                                                                    <span className="avatar-text">M</span>
+
                                                                 </div>
                                                             </div>
                                                             <div className="col">
@@ -277,7 +277,7 @@ export class SideBar extends Component {
                                                             </div>
                                                             <div className="col-auto">
                                                                 <div className="form-check">
-                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-6"/>
+                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-6" />
                                                                     <label className="form-check-label" htmlFor="id-member-6"></label>
                                                                 </div>
                                                             </div>
@@ -285,17 +285,17 @@ export class SideBar extends Component {
                                                         <label className="stretched-label" htmlFor="id-member-6"></label>
                                                     </div>
                                                 </div>
-                                           
+
                                                 <div className="card border-0 mt-5">
                                                     <div className="card-body">
 
                                                         <div className="row align-items-center gx-5">
                                                             <div className="col-auto">
                                                                 <div className="avatar ">
-                                                                    
-                                                                        <img className="avatar-img" src="assets/img/avatars/11.jpg" alt=""/>
-                                                                    
-                                                                    
+
+                                                                    <img className="avatar-img" src="assets/img/avatars/11.jpg" alt="" />
+
+
                                                                 </div>
                                                             </div>
                                                             <div className="col">
@@ -304,7 +304,7 @@ export class SideBar extends Component {
                                                             </div>
                                                             <div className="col-auto">
                                                                 <div className="form-check">
-                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-5"/>
+                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-5" />
                                                                     <label className="form-check-label" htmlFor="id-member-5"></label>
                                                                 </div>
                                                             </div>
@@ -312,23 +312,23 @@ export class SideBar extends Component {
                                                         <label className="stretched-label" htmlFor="id-member-5"></label>
                                                     </div>
                                                 </div>
-                                          
+
 
                                                 <div className="my-5">
                                                     <small className="text-uppercase text-muted">O</small>
                                                 </div>
 
-                                       
+
                                                 <div className="card border-0 mt-5">
                                                     <div className="card-body">
 
                                                         <div className="row align-items-center gx-5">
                                                             <div className="col-auto">
                                                                 <div className="avatar avatar-online">
-                                                                    
-                                                                    
-                                                                        <span className="avatar-text">O</span>
-                                                                    
+
+
+                                                                    <span className="avatar-text">O</span>
+
                                                                 </div>
                                                             </div>
                                                             <div className="col">
@@ -337,7 +337,7 @@ export class SideBar extends Component {
                                                             </div>
                                                             <div className="col-auto">
                                                                 <div className="form-check">
-                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-7"/>
+                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-7" />
                                                                     <label className="form-check-label" htmlFor="id-member-7"></label>
                                                                 </div>
                                                             </div>
@@ -345,23 +345,23 @@ export class SideBar extends Component {
                                                         <label className="stretched-label" htmlFor="id-member-7"></label>
                                                     </div>
                                                 </div>
-                                        
+
 
                                                 <div className="my-5">
                                                     <small className="text-uppercase text-muted">W</small>
                                                 </div>
 
-                              
+
                                                 <div className="card border-0 mt-5">
                                                     <div className="card-body">
 
                                                         <div className="row align-items-center gx-5">
                                                             <div className="col-auto">
                                                                 <div className="avatar ">
-                                                                    
-                                                                        <img className="avatar-img" src="assets/img/avatars/4.jpg" alt=""/>
-                                                                    
-                                                                    
+
+                                                                    <img className="avatar-img" src="assets/img/avatars/4.jpg" alt="" />
+
+
                                                                 </div>
                                                             </div>
                                                             <div className="col">
@@ -370,7 +370,7 @@ export class SideBar extends Component {
                                                             </div>
                                                             <div className="col-auto">
                                                                 <div className="form-check">
-                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-8"/>
+                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-8" />
                                                                     <label className="form-check-label" htmlFor="id-member-8"></label>
                                                                 </div>
                                                             </div>
@@ -378,17 +378,17 @@ export class SideBar extends Component {
                                                         <label className="stretched-label" htmlFor="id-member-8"></label>
                                                     </div>
                                                 </div>
-                                             
+
                                                 <div className="card border-0 mt-5">
                                                     <div className="card-body">
 
                                                         <div className="row align-items-center gx-5">
                                                             <div className="col-auto">
                                                                 <div className="avatar avatar-online">
-                                                                    
-                                                                        <img className="avatar-img" src="assets/img/avatars/7.jpg" alt=""/>
-                                                                    
-                                                                    
+
+                                                                    <img className="avatar-img" src="assets/img/avatars/7.jpg" alt="" />
+
+
                                                                 </div>
                                                             </div>
                                                             <div className="col">
@@ -397,7 +397,7 @@ export class SideBar extends Component {
                                                             </div>
                                                             <div className="col-auto">
                                                                 <div className="form-check">
-                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-9"/>
+                                                                    <input className="form-check-input" type="checkbox" value="" id="id-member-9" />
                                                                     <label className="form-check-label" htmlFor="id-member-9"></label>
                                                                 </div>
                                                             </div>
@@ -405,16 +405,16 @@ export class SideBar extends Component {
                                                         <label className="stretched-label" htmlFor="id-member-9"></label>
                                                     </div>
                                                 </div>
-                                         
+
                                             </nav>
                                         </div>
                                     </div>
-                              
+
                                 </div>
 
                             </div>
 
-                        
+
                             <div className="container mt-n4 mb-8 position-relative">
                                 <button className="btn btn-lg btn-primary w-100 d-flex align-items-center" type="button">
                                     Start chat
@@ -423,22 +423,22 @@ export class SideBar extends Component {
                                     </span>
                                 </button>
                             </div>
-                         
+
                         </div>
                     </div>
 
-                 
+
                     <div className="tab-pane fade h-100" id="tab-content-friends" role="tabpanel">
                         <div className="d-flex flex-column h-100">
                             <div className="hide-scrollbar">
                                 <div className="container py-8">
 
-                                 
+
                                     <div className="mb-8">
                                         <h2 className="fw-bold m-0">Friends</h2>
                                     </div>
 
-                                 
+
                                     <div className="mb-6">
                                         <form action="#">
                                             <div className="input-group">
@@ -448,11 +448,11 @@ export class SideBar extends Component {
                                                     </div>
                                                 </div>
 
-                                                <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..."/>
+                                                <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..." />
                                             </div>
                                         </form>
 
-                               
+
                                         <div className="mt-5">
                                             <a href="index.html" className="btn btn-lg btn-primary w-100 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modal-invite">
                                                 Find Friends
@@ -464,23 +464,23 @@ export class SideBar extends Component {
                                         </div>
                                     </div>
 
-                            
+
                                     <div className="card-list">
                                         <div className="my-5">
                                             <small className="text-uppercase text-muted">B</small>
                                         </div>
 
-                                 
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row align-items-center gx-5">
                                                     <div className="col-auto">
                                                         <a href="index.html" className="avatar ">
-                                                            
-                                                            <img className="avatar-img" src="assets/img/avatars/6.jpg" alt=""/>
-                                                            
-                                                            
+
+                                                            <img className="avatar-img" src="assets/img/avatars/6.jpg" alt="" />
+
+
                                                         </a>
                                                     </div>
 
@@ -490,7 +490,7 @@ export class SideBar extends Component {
                                                     </div>
 
                                                     <div className="col-auto">
-                                                 
+
                                                         <div className="dropdown">
                                                             <a className="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
@@ -501,7 +501,7 @@ export class SideBar extends Component {
                                                                 <li><a className="dropdown-item" href="#">Edit contact</a>
                                                                 </li>
                                                                 <li>
-                                                                    <hr className="dropdown-divider"/>
+                                                                    <hr className="dropdown-divider" />
                                                                 </li>
                                                                 <li>
                                                                     <a className="dropdown-item text-danger" href="#">Block user</a>
@@ -514,23 +514,23 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                          
+
 
                                         <div className="my-5">
                                             <small className="text-uppercase text-muted">D</small>
                                         </div>
 
-                              
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row align-items-center gx-5">
                                                     <div className="col-auto">
                                                         <a href="index.html" className="avatar ">
-                                                            
-                                                            <img className="avatar-img" src="assets/img/avatars/5.jpg" alt=""/>
-                                                            
-                                                            
+
+                                                            <img className="avatar-img" src="assets/img/avatars/5.jpg" alt="" />
+
+
                                                         </a>
                                                     </div>
 
@@ -540,7 +540,7 @@ export class SideBar extends Component {
                                                     </div>
 
                                                     <div className="col-auto">
-                                                    
+
                                                         <div className="dropdown">
                                                             <a className="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
@@ -551,7 +551,7 @@ export class SideBar extends Component {
                                                                 <li><a className="dropdown-item" href="#">Edit contact</a>
                                                                 </li>
                                                                 <li>
-                                                                    <hr className="dropdown-divider"/>
+                                                                    <hr className="dropdown-divider" />
                                                                 </li>
                                                                 <li>
                                                                     <a className="dropdown-item text-danger" href="#">Block user</a>
@@ -564,17 +564,17 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                  
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row align-items-center gx-5">
                                                     <div className="col-auto">
                                                         <a href="index.html" className="avatar avatar-online">
-                                                            
-                                                            
+
+
                                                             <span className="avatar-text">D</span>
-                                                            
+
                                                         </a>
                                                     </div>
 
@@ -584,7 +584,7 @@ export class SideBar extends Component {
                                                     </div>
 
                                                     <div className="col-auto">
-                                                     
+
                                                         <div className="dropdown">
                                                             <a className="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
@@ -595,7 +595,7 @@ export class SideBar extends Component {
                                                                 <li><a className="dropdown-item" href="#">Edit contact</a>
                                                                 </li>
                                                                 <li>
-                                                                    <hr className="dropdown-divider"/>
+                                                                    <hr className="dropdown-divider" />
                                                                 </li>
                                                                 <li>
                                                                     <a className="dropdown-item text-danger" href="#">Block user</a>
@@ -608,23 +608,23 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                        
+
 
                                         <div className="my-5">
                                             <small className="text-uppercase text-muted">E</small>
                                         </div>
 
-                                
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row align-items-center gx-5">
                                                     <div className="col-auto">
                                                         <a href="index.html" className="avatar avatar-online">
-                                                            
-                                                            <img className="avatar-img" src="assets/img/avatars/8.jpg" alt=""/>
-                                                            
-                                                            
+
+                                                            <img className="avatar-img" src="assets/img/avatars/8.jpg" alt="" />
+
+
                                                         </a>
                                                     </div>
 
@@ -634,7 +634,7 @@ export class SideBar extends Component {
                                                     </div>
 
                                                     <div className="col-auto">
-                                                 
+
                                                         <div className="dropdown">
                                                             <a className="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
@@ -645,7 +645,7 @@ export class SideBar extends Component {
                                                                 <li><a className="dropdown-item" href="#">Edit contact</a>
                                                                 </li>
                                                                 <li>
-                                                                    <hr className="dropdown-divider"/>
+                                                                    <hr className="dropdown-divider" />
                                                                 </li>
                                                                 <li>
                                                                     <a className="dropdown-item text-danger" href="#">Block user</a>
@@ -658,23 +658,23 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                  
+
 
                                         <div className="my-5">
                                             <small className="text-uppercase text-muted">M</small>
                                         </div>
 
-                               
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row align-items-center gx-5">
                                                     <div className="col-auto">
                                                         <a href="index.html" className="avatar ">
-                                                            
-                                                            
+
+
                                                             <span className="avatar-text">M</span>
-                                                            
+
                                                         </a>
                                                     </div>
 
@@ -684,7 +684,7 @@ export class SideBar extends Component {
                                                     </div>
 
                                                     <div className="col-auto">
-                                                   
+
                                                         <div className="dropdown">
                                                             <a className="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
@@ -695,7 +695,7 @@ export class SideBar extends Component {
                                                                 <li><a className="dropdown-item" href="#">Edit contact</a>
                                                                 </li>
                                                                 <li>
-                                                                    <hr className="dropdown-divider"/>
+                                                                    <hr className="dropdown-divider" />
                                                                 </li>
                                                                 <li>
                                                                     <a className="dropdown-item text-danger" href="#">Block user</a>
@@ -708,17 +708,17 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                               
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row align-items-center gx-5">
                                                     <div className="col-auto">
                                                         <a href="index.html" className="avatar ">
-                                                            
-                                                            <img className="avatar-img" src="assets/img/avatars/11.jpg" alt=""/>
-                                                            
-                                                            
+
+                                                            <img className="avatar-img" src="assets/img/avatars/11.jpg" alt="" />
+
+
                                                         </a>
                                                     </div>
 
@@ -728,7 +728,7 @@ export class SideBar extends Component {
                                                     </div>
 
                                                     <div className="col-auto">
-                                       
+
                                                         <div className="dropdown">
                                                             <a className="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
@@ -739,7 +739,7 @@ export class SideBar extends Component {
                                                                 <li><a className="dropdown-item" href="#">Edit contact</a>
                                                                 </li>
                                                                 <li>
-                                                                    <hr className="dropdown-divider"/>
+                                                                    <hr className="dropdown-divider" />
                                                                 </li>
                                                                 <li>
                                                                     <a className="dropdown-item text-danger" href="#">Block user</a>
@@ -752,23 +752,23 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                   
+
 
                                         <div className="my-5">
                                             <small className="text-uppercase text-muted">O</small>
                                         </div>
 
-                                      
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row align-items-center gx-5">
                                                     <div className="col-auto">
                                                         <a href="index.html" className="avatar avatar-online">
-                                                            
-                                                            
+
+
                                                             <span className="avatar-text">O</span>
-                                                            
+
                                                         </a>
                                                     </div>
 
@@ -778,7 +778,7 @@ export class SideBar extends Component {
                                                     </div>
 
                                                     <div className="col-auto">
-                                                   
+
                                                         <div className="dropdown">
                                                             <a className="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
@@ -789,7 +789,7 @@ export class SideBar extends Component {
                                                                 <li><a className="dropdown-item" href="#">Edit contact</a>
                                                                 </li>
                                                                 <li>
-                                                                    <hr className="dropdown-divider"/>
+                                                                    <hr className="dropdown-divider" />
                                                                 </li>
                                                                 <li>
                                                                     <a className="dropdown-item text-danger" href="#">Block user</a>
@@ -802,23 +802,23 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                     
+
 
                                         <div className="my-5">
                                             <small className="text-uppercase text-muted">W</small>
                                         </div>
 
-                                     
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row align-items-center gx-5">
                                                     <div className="col-auto">
                                                         <a href="index.html" className="avatar ">
-                                                            
-                                                            <img className="avatar-img" src="assets/img/avatars/4.jpg" alt=""/>
-                                                            
-                                                            
+
+                                                            <img className="avatar-img" src="assets/img/avatars/4.jpg" alt="" />
+
+
                                                         </a>
                                                     </div>
 
@@ -828,7 +828,7 @@ export class SideBar extends Component {
                                                     </div>
 
                                                     <div className="col-auto">
-                                                
+
                                                         <div className="dropdown">
                                                             <a className="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
@@ -839,7 +839,7 @@ export class SideBar extends Component {
                                                                 <li><a className="dropdown-item" href="#">Edit contact</a>
                                                                 </li>
                                                                 <li>
-                                                                    <hr className="dropdown-divider"/>
+                                                                    <hr className="dropdown-divider" />
                                                                 </li>
                                                                 <li>
                                                                     <a className="dropdown-item text-danger" href="#">Block user</a>
@@ -852,17 +852,17 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                       
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row align-items-center gx-5">
                                                     <div className="col-auto">
                                                         <a href="index.html" className="avatar avatar-online">
-                                                            
-                                                            <img className="avatar-img" src="assets/img/avatars/7.jpg" alt=""/>
-                                                            
-                                                            
+
+                                                            <img className="avatar-img" src="assets/img/avatars/7.jpg" alt="" />
+
+
                                                         </a>
                                                     </div>
 
@@ -872,7 +872,7 @@ export class SideBar extends Component {
                                                     </div>
 
                                                     <div className="col-auto">
-                                                     
+
                                                         <div className="dropdown">
                                                             <a className="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
@@ -883,7 +883,7 @@ export class SideBar extends Component {
                                                                 <li><a className="dropdown-item" href="#">Edit contact</a>
                                                                 </li>
                                                                 <li>
-                                                                    <hr className="dropdown-divider"/>
+                                                                    <hr className="dropdown-divider" />
                                                                 </li>
                                                                 <li>
                                                                     <a className="dropdown-item text-danger" href="#">Block user</a>
@@ -896,7 +896,7 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                     
+
                                     </div>
 
                                 </div>
@@ -904,18 +904,18 @@ export class SideBar extends Component {
                         </div>
                     </div>
 
-                  
+
                     <div className="tab-pane fade h-100 show active" id="tab-content-chats" role="tabpanel">
                         <div className="d-flex flex-column h-100 position-relative">
                             <div className="hide-scrollbar">
 
                                 <div className="container py-8">
-                                  
+
                                     <div className="mb-8">
                                         <h2 className="fw-bold m-0">Chats</h2>
                                     </div>
 
-                                   
+
                                     <div className="mb-6">
                                         <form action="#">
                                             <div className="input-group">
@@ -925,20 +925,20 @@ export class SideBar extends Component {
                                                     </div>
                                                 </div>
 
-                                                <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..."/>
+                                                <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..." />
                                             </div>
                                         </form>
                                     </div>
 
-                                   
+
                                     <div className="card-list">
-                                       
+
                                         <a href="chat-group.html" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
                                                         <div className="avatar avatar-online">
-                                                            <img src="assets/img/avatars/7.jpg" alt="#" className="avatar-img"/>
+                                                            <img src="assets/img/avatars/7.jpg" alt="#" className="avatar-img" />
                                                         </div>
                                                     </div>
 
@@ -965,7 +965,7 @@ export class SideBar extends Component {
                                                 <div className="row align-items-center gx-4">
                                                     <div className="col-auto">
                                                         <div className="avatar avatar-xs">
-                                                            <img className="avatar-img" src="assets/img/avatars/bootstrap.svg" alt="Bootstrap Community"/>
+                                                            <img className="avatar-img" src="assets/img/avatars/bootstrap.svg" alt="Bootstrap Community" />
                                                         </div>
                                                     </div>
 
@@ -976,15 +976,15 @@ export class SideBar extends Component {
                                                     <div className="col-auto">
                                                         <div className="avatar-group">
                                                             <div className="avatar avatar-xs">
-                                                                <img src="assets/img/avatars/12.jpg" alt="#" className="avatar-img"/>
+                                                                <img src="assets/img/avatars/12.jpg" alt="#" className="avatar-img" />
                                                             </div>
 
                                                             <div className="avatar avatar-xs">
-                                                                <img src="assets/img/avatars/11.jpg" alt="#" className="avatar-img"/>
+                                                                <img src="assets/img/avatars/11.jpg" alt="#" className="avatar-img" />
                                                             </div>
 
                                                             <div className="avatar avatar-xs">
-                                                                <img src="assets/img/avatars/9.jpg" alt="#" className="avatar-img"/>
+                                                                <img src="assets/img/avatars/9.jpg" alt="#" className="avatar-img" />
                                                             </div>
 
                                                             <div className="avatar avatar-xs">
@@ -995,15 +995,15 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                       
 
-                                      
+
+
                                         <a href="chat-direct.html" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
                                                         <div className="avatar avatar-online">
-                                                            <img src="assets/img/avatars/6.jpg" alt="#" className="avatar-img"/>
+                                                            <img src="assets/img/avatars/6.jpg" alt="#" className="avatar-img" />
                                                         </div>
                                                     </div>
 
@@ -1026,15 +1026,15 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                       
 
-                                        
+
+
                                         <a href="chat-empty.html" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
                                                         <div className="avatar avatar-online">
-                                                            <img src="assets/img/avatars/8.jpg" alt="#" className="avatar-img"/>
+                                                            <img src="assets/img/avatars/8.jpg" alt="#" className="avatar-img" />
                                                         </div>
                                                     </div>
 
@@ -1053,20 +1053,20 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                       
 
-                                       
+
+
                                         <a href="chat-direct.html" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
                                                         <div className="avatar-group-trigon avatar-group-trigon-sm">
                                                             <div className="avatar avatar-sm">
-                                                                <img className="avatar-img" src="assets/img/avatars/7.jpg" alt="#"/>
+                                                                <img className="avatar-img" src="assets/img/avatars/7.jpg" alt="#" />
                                                             </div>
 
                                                             <div className="avatar avatar-sm">
-                                                                <img className="avatar-img" src="assets/img/avatars/9.jpg" alt="#"/>
+                                                                <img className="avatar-img" src="assets/img/avatars/9.jpg" alt="#" />
                                                             </div>
 
                                                             <div className="avatar avatar-sm">
@@ -1090,15 +1090,15 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                       
 
-                                       
+
+
                                         <a href="chat-direct.html" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
                                                         <div className="avatar">
-                                                            <img src="assets/img/avatars/4.jpg" alt="#" className="avatar-img"/>
+                                                            <img src="assets/img/avatars/4.jpg" alt="#" className="avatar-img" />
                                                         </div>
                                                     </div>
 
@@ -1117,13 +1117,13 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                    
+
                                         <a href="chat-direct.html" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
                                                         <div className="avatar">
-                                                            <img src="assets/img/avatars/11.jpg" alt="#" className="avatar-img"/>
+                                                            <img src="assets/img/avatars/11.jpg" alt="#" className="avatar-img" />
                                                         </div>
                                                     </div>
 
@@ -1142,15 +1142,15 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                        
 
-                                      
+
+
                                         <a href="chat-direct.html" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
                                                         <div className="avatar avatar-online">
-                                                            <img src="assets/img/avatars/5.jpg" alt="#" className="avatar-img"/>
+                                                            <img src="assets/img/avatars/5.jpg" alt="#" className="avatar-img" />
                                                         </div>
                                                     </div>
 
@@ -1169,9 +1169,9 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                       
 
-                                       
+
+
                                         <a href="chat-direct.html" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
@@ -1196,7 +1196,7 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                   
+
                                         <a href="#" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
@@ -1221,9 +1221,9 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                       
 
-                                       
+
+
                                         <a href="chat-direct.html" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
@@ -1251,7 +1251,7 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                      
+
                                         <a href="chat-direct.html" className="card border-0 text-reset">
                                             <div className="card-body">
                                                 <div className="row gx-5">
@@ -1279,27 +1279,27 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </a>
-                                      
+
                                     </div>
-                         
+
                                 </div>
 
                             </div>
                         </div>
                     </div>
 
-                    
+
                     <div className="tab-pane fade h-100" id="tab-content-notifications" role="tabpanel">
                         <div className="d-flex flex-column h-100">
                             <div className="hide-scrollbar">
                                 <div className="container py-8">
 
-                                
+
                                     <div className="mb-8">
                                         <h2 className="fw-bold m-0">Notifications</h2>
                                     </div>
 
-                                   
+
                                     <div className="mb-6">
                                         <form action="#">
                                             <div className="input-group">
@@ -1309,29 +1309,29 @@ export class SideBar extends Component {
                                                     </div>
                                                 </div>
 
-                                                <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..."/>
+                                                <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..." />
                                             </div>
                                         </form>
                                     </div>
 
-                                  
+
                                     <div className="card-list">
-                                       
+
                                         <div className="d-flex align-items-center my-4 px-6">
                                             <small className="text-muted me-auto">Today</small>
 
                                             <a href="index.html" className="text-muted small">Clear all</a>
                                         </div>
-                                       
+
 
                                         <div className="card border-0 mb-5">
                                             <div className="card-body">
 
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
-                                                        
+
                                                         <a href="index.html" className="avatar">
-                                                            <img className="avatar-img" src="assets/img/avatars/11.jpg" alt=""/>
+                                                            <img className="avatar-img" src="assets/img/avatars/11.jpg" alt="" />
 
                                                             <div className="badge badge-circle bg-primary border-outline position-absolute bottom-0 end-0">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
@@ -1375,13 +1375,13 @@ export class SideBar extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                     
+
                                         <div className="card border-0 mb-5">
                                             <div className="card-body">
 
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
-                                                        
+
                                                         <a href="index.html" className="avatar">
                                                             <span className="avatar-text bg-warning">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
@@ -1419,25 +1419,25 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                       
-                                    </div>
-                                    
 
-                                   
+                                    </div>
+
+
+
                                     <div className="card-list mt-8">
-                                      
+
                                         <div className="d-flex align-items-center my-4 px-6">
                                             <small className="text-muted me-auto">Yesterday</small>
 
                                             <a href="index.html" className="text-muted small">Clear all</a>
                                         </div>
-                                    
+
                                         <div className="card border-0 mb-5">
                                             <div className="card-body">
 
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
-                                                       
+
                                                         <div className="avatar">
                                                             <span className="avatar-text bg-success">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
@@ -1456,7 +1456,7 @@ export class SideBar extends Component {
                                                         </div>
 
                                                         <div className="d-flex">
-                                                            <div className="me-auto">Your password has been <br/> updated successfully.</div>
+                                                            <div className="me-auto">Your password has been <br /> updated successfully.</div>
 
                                                             <div className="dropdown ms-5">
                                                                 <a className="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -1473,30 +1473,30 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                       
-                                    </div>
-                                    
 
-                                   
+                                    </div>
+
+
+
                                     <div className="card-list mt-8">
 
-                                     
+
                                         <div className="d-flex align-items-center my-4 px-6">
                                             <small className="text-muted me-auto">Previous</small>
 
                                             <a href="index.html" className="text-muted small">Clear all</a>
                                         </div>
-                                      
 
-                                        
+
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
-                                                       
+
                                                         <a href="index.html" className="avatar">
-                                                            <img className="avatar-img" src="assets/img/avatars/7.jpg" alt=""/>
+                                                            <img className="avatar-img" src="assets/img/avatars/7.jpg" alt="" />
 
                                                             <div className="badge badge-circle bg-primary border-outline position-absolute bottom-0 end-0">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-image"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
@@ -1530,15 +1530,15 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                  
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
-                                                  
+
                                                         <a href="index.html" className="avatar">
-                                                            <img className="avatar-img" src="assets/img/avatars/9.jpg" alt=""/>
+                                                            <img className="avatar-img" src="assets/img/avatars/9.jpg" alt="" />
 
                                                             <div className="badge badge-circle bg-primary border-outline position-absolute bottom-0 end-0">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
@@ -1573,13 +1573,13 @@ export class SideBar extends Component {
 
                                             </div>
                                         </div>
-                                        
+
                                         <div className="card border-0">
                                             <div className="card-body">
 
                                                 <div className="row gx-5">
                                                     <div className="col-auto">
-                                                
+
                                                         <a href="index.html" className="avatar avatar-badged" data-theme-toggle="tab">
                                                             <span className="avatar-text bg-danger">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
@@ -1620,7 +1620,7 @@ export class SideBar extends Component {
                                             </div>
                                         </div>
                                     </div>
-                          
+
                                 </div>
                             </div>
                         </div>
@@ -1631,12 +1631,12 @@ export class SideBar extends Component {
                             <div className="hide-scrollbar">
                                 <div className="container py-8">
 
-                                  
+
                                     <div className="mb-8">
                                         <h2 className="fw-bold m-0">Support</h2>
                                     </div>
 
-                                  
+
                                     <div className="mb-6">
                                         <form action="#">
                                             <div className="input-group">
@@ -1646,25 +1646,25 @@ export class SideBar extends Component {
                                                     </div>
                                                 </div>
 
-                                                <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..."/>
+                                                <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..." />
                                             </div>
                                         </form>
                                     </div>
 
-                                    
+
                                     <div className="card border-0">
                                         <div className="card-body">
 
                                             <div className="row align-items-center gx-5">
                                                 <div className="col-auto text-primary">
                                                     <svg version="1.1" width="46px" height="46px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 46 46" enableBackground="new 0 0 46 46" xmlSpace="preserve">
-                                                        <polygon opacity="0.7" points="45,11 36,11 35.5,1 "/>
-                                                        <polygon points="35.5,1 25.4,14.1 39,21 "/>
-                                                        <polygon opacity="0.4" points="17,9.8 39,21 17,26 "/>
-                                                        <polygon opacity="0.7" points="2,12 17,26 17,9.8 "/>
-                                                        <polygon opacity="0.7" points="17,26 39,21 28,36 "/>
-                                                        <polygon points="28,36 4.5,44 17,26 "/>
-                                                        <polygon points="17,26 1,26 10.8,20.1 "/>
+                                                        <polygon opacity="0.7" points="45,11 36,11 35.5,1 " />
+                                                        <polygon points="35.5,1 25.4,14.1 39,21 " />
+                                                        <polygon opacity="0.4" points="17,9.8 39,21 17,26 " />
+                                                        <polygon opacity="0.7" points="2,12 17,26 17,9.8 " />
+                                                        <polygon opacity="0.7" points="17,26 39,21 28,36 " />
+                                                        <polygon points="28,36 4.5,44 17,26 " />
+                                                        <polygon points="17,26 1,26 10.8,20.1 " />
                                                     </svg>
 
                                                 </div>
@@ -1683,7 +1683,7 @@ export class SideBar extends Component {
 
                                         </div>
                                     </div>
-                                 
+
 
                                     <div className="card-list mt-8">
                                         <div className="d-flex align-items-center mb-4 px-6">
@@ -1754,24 +1754,24 @@ export class SideBar extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                 
+
                                 </div>
                             </div>
                         </div>
                     </div>
 
-               
+
                     <div className="tab-pane fade h-100" id="tab-content-settings" role="tabpanel">
                         <div className="d-flex flex-column h-100">
                             <div className="hide-scrollbar">
                                 <div className="container py-8">
 
-                               
+
                                     <div className="mb-8">
                                         <h2 className="fw-bold m-0">Settings</h2>
                                     </div>
 
-                                   
+
                                     <div className="mb-6">
                                         <form action="#">
                                             <div className="input-group">
@@ -1781,23 +1781,23 @@ export class SideBar extends Component {
                                                     </div>
                                                 </div>
 
-                                                <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..."/>
+                                                <input type="text" className="form-control form-control-lg ps-0" placeholder="Search messages or users" aria-label="Search for messages or users..." />
                                             </div>
                                         </form>
                                     </div>
 
-                                   
+
                                     <div className="card border-0">
                                         <div className="card-body">
                                             <div className="row align-items-center gx-5">
                                                 <div className="col-auto">
                                                     <div className="avatar">
-                                                        <img src="assets/img/avatars/1.jpg" alt="#" className="avatar-img"/>
+                                                        <img src="assets/img/avatars/1.jpg" alt="#" className="avatar-img" />
 
                                                         <div className="badge badge-circle bg-secondary border-outline position-absolute bottom-0 end-0">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-image"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
                                                         </div>
-                                                        <input id="upload-profile-photo" className="d-none" type="file"/>
+                                                        <input id="upload-profile-photo" className="d-none" type="file" />
                                                         <label className="stretched-label mb-0" htmlFor="upload-profile-photo"></label>
                                                     </div>
                                                 </div>
@@ -1815,7 +1815,7 @@ export class SideBar extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                   
+
                                     <div className="mt-8">
                                         <div className="d-flex align-items-center mb-4 px-6">
                                             <small className="text-muted me-auto">Account</small>
@@ -1823,7 +1823,7 @@ export class SideBar extends Component {
 
                                         <div className="card border-0">
                                             <div className="card-body py-2">
-                                          
+
                                                 <div className="accordion accordion-flush" id="accordion-profile">
                                                     <div className="accordion-item">
                                                         <div className="accordion-header" id="accordion-profile-1">
@@ -1838,22 +1838,22 @@ export class SideBar extends Component {
                                                         <div id="accordion-profile-body-1" className="accordion-collapse collapse" aria-labelledby="accordion-profile-1" data-parent="#accordion-profile">
                                                             <div className="accordion-body">
                                                                 <div className="form-floating mb-6">
-                                                                    <input type="text" className="form-control" id="profile-name" placeholder="Name"/>
+                                                                    <input type="text" className="form-control" id="profile-name" placeholder="Name" />
                                                                     <label htmlFor="profile-name">Name</label>
                                                                 </div>
 
                                                                 <div className="form-floating mb-6">
-                                                                    <input type="email" className="form-control" id="profile-email" placeholder="Email address"/>
+                                                                    <input type="email" className="form-control" id="profile-email" placeholder="Email address" />
                                                                     <label htmlFor="profile-email">Email</label>
                                                                 </div>
 
                                                                 <div className="form-floating mb-6">
-                                                                    <input type="text" className="form-control" id="profile-phone" placeholder="Phone"/>
+                                                                    <input type="text" className="form-control" id="profile-phone" placeholder="Phone" />
                                                                     <label htmlFor="profile-phone">Phone</label>
                                                                 </div>
 
                                                                 <div className="form-floating mb-6">
-                                                                    <textarea className="form-control" placeholder="Bio" id="profile-bio" data-autosize="true" style={{"minHeight": 120}}></textarea>
+                                                                    <textarea className="form-control" placeholder="Bio" id="profile-bio" data-autosize="true" style={{ "minHeight": 120 }}></textarea>
                                                                     <label htmlFor="profile-bio">Bio</label>
                                                                 </div>
 
@@ -1875,17 +1875,17 @@ export class SideBar extends Component {
                                                         <div id="accordion-profile-body-2" className="accordion-collapse collapse" aria-labelledby="accordion-profile-2" data-parent="#accordion-profile">
                                                             <div className="accordion-body">
                                                                 <div className="form-floating mb-6">
-                                                                    <input type="text" className="form-control" id="profile-twitter" placeholder="Twitter"/>
+                                                                    <input type="text" className="form-control" id="profile-twitter" placeholder="Twitter" />
                                                                     <label htmlFor="profile-twitter">Twitter</label>
                                                                 </div>
 
                                                                 <div className="form-floating mb-6">
-                                                                    <input type="text" className="form-control" id="profile-facebook" placeholder="Facebook"/>
+                                                                    <input type="text" className="form-control" id="profile-facebook" placeholder="Facebook" />
                                                                     <label htmlFor="profile-facebook">Facebook</label>
                                                                 </div>
 
                                                                 <div className="form-floating mb-6">
-                                                                    <input type="text" className="form-control" id="profile-instagram" placeholder="Instagram"/>
+                                                                    <input type="text" className="form-control" id="profile-instagram" placeholder="Instagram" />
                                                                     <label htmlFor="profile-instagram">Instagram</label>
                                                                 </div>
 
@@ -1894,7 +1894,7 @@ export class SideBar extends Component {
                                                         </div>
                                                     </div>
 
-                                               
+
                                                     <div className="accordion-item">
                                                         <div className="accordion-header">
                                                             <div className="row align-items-center">
@@ -1919,7 +1919,7 @@ export class SideBar extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                   
+
                                     <div className="mt-8">
                                         <div className="d-flex align-items-center my-4 px-6">
                                             <small className="text-muted me-auto">Security</small>
@@ -1927,7 +1927,7 @@ export class SideBar extends Component {
 
                                         <div className="card border-0">
                                             <div className="card-body py-2">
-                                           
+
                                                 <div className="accordion accordion-flush" id="accordion-security">
                                                     <div className="accordion-item">
                                                         <div className="accordion-header" id="accordion-security-1">
@@ -1943,17 +1943,17 @@ export class SideBar extends Component {
                                                             <div className="accordion-body">
                                                                 <form action="#" autoComplete="on">
                                                                     <div className="form-floating mb-6">
-                                                                        <input type="password" className="form-control" id="profile-current-password" placeholder="Current Password" autoComplete=""/>
+                                                                        <input type="password" className="form-control" id="profile-current-password" placeholder="Current Password" autoComplete="" />
                                                                         <label htmlFor="profile-current-password">Current Password</label>
                                                                     </div>
 
                                                                     <div className="form-floating mb-6">
-                                                                        <input type="password" className="form-control" id="profile-new-password" placeholder="New password" autoComplete=""/>
+                                                                        <input type="password" className="form-control" id="profile-new-password" placeholder="New password" autoComplete="" />
                                                                         <label htmlFor="profile-new-password">New password</label>
                                                                     </div>
 
                                                                     <div className="form-floating mb-6">
-                                                                        <input type="password" className="form-control" id="profile-verify-password" placeholder="Verify Password" autoComplete=""/>
+                                                                        <input type="password" className="form-control" id="profile-verify-password" placeholder="Verify Password" autoComplete="" />
                                                                         <label htmlFor="profile-verify-password">Verify Password</label>
                                                                     </div>
                                                                 </form>
@@ -1962,7 +1962,7 @@ export class SideBar extends Component {
                                                         </div>
                                                     </div>
 
-                                                
+
                                                     <div className="accordion-item">
                                                         <div className="accordion-header">
                                                             <div className="row align-items-center">
@@ -1972,7 +1972,7 @@ export class SideBar extends Component {
                                                                 </div>
                                                                 <div className="col-auto">
                                                                     <div className="form-check form-switch">
-                                                                        <input className="form-check-input" type="checkbox" id="accordion-security-check-1"/>
+                                                                        <input className="form-check-input" type="checkbox" id="accordion-security-check-1" />
                                                                         <label className="form-check-label" htmlFor="accordion-security-check-1"></label>
                                                                     </div>
                                                                 </div>
@@ -1983,7 +1983,7 @@ export class SideBar extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                 
+
                                     <div className="mt-8">
                                         <div className="d-flex align-items-center my-4 px-6">
                                             <small className="text-muted me-auto">Storage</small>
@@ -1999,7 +1999,7 @@ export class SideBar extends Component {
 
                                         <div className="card border-0">
                                             <div className="card-body py-2">
-                                            
+
                                                 <div className="accordion accordion-flush" id="accordion-storage">
                                                     <div className="accordion-item">
                                                         <div className="accordion-header" id="accordion-storage-1">
@@ -2027,7 +2027,7 @@ export class SideBar extends Component {
                                                                         <small>8 GB</small>
                                                                     </div>
                                                                 </div>
-                                                                <input type="range" className="form-range" min="1" max="4" step="1" id="custom-range-1"/>
+                                                                <input type="range" className="form-range" min="1" max="4" step="1" id="custom-range-1" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2041,7 +2041,7 @@ export class SideBar extends Component {
                                                                 </div>
                                                                 <div className="col-auto">
                                                                     <div className="form-check form-switch">
-                                                                        <input className="form-check-input" type="checkbox" id="accordion-storage-check-1"/>
+                                                                        <input className="form-check-input" type="checkbox" id="accordion-storage-check-1" />
                                                                         <label className="form-check-label" htmlFor="accordion-storage-check-1"></label>
                                                                     </div>
                                                                 </div>
@@ -2052,13 +2052,13 @@ export class SideBar extends Component {
                                             </div>
                                         </div>
                                     </div>
-                               
+
                                     <div className="mt-8">
                                         <div className="d-flex align-items-center my-4 px-6">
                                             <small className="text-muted me-auto">Notifications</small>
                                         </div>
 
-                                    
+
                                         <div className="card border-0">
                                             <div className="card-body py-2">
                                                 <div className="accordion accordion-flush" id="accordion-notifications">
@@ -2082,7 +2082,7 @@ export class SideBar extends Component {
 
                                                                     <div className="col-auto">
                                                                         <div className="form-check form-switch">
-                                                                            <input className="form-check-input" type="checkbox" id="accordion-notifications-check-1"/>
+                                                                            <input className="form-check-input" type="checkbox" id="accordion-notifications-check-1" />
                                                                             <label className="form-check-label" htmlFor="accordion-notifications-check-1"></label>
                                                                         </div>
                                                                     </div>
@@ -2100,7 +2100,7 @@ export class SideBar extends Component {
                                                                 </div>
                                                                 <div className="col-auto">
                                                                     <div className="form-check form-switch">
-                                                                        <input className="form-check-input" type="checkbox" id="accordion-notifications-check-3"/>
+                                                                        <input className="form-check-input" type="checkbox" id="accordion-notifications-check-3" />
                                                                         <label className="form-check-label" htmlFor="accordion-notifications-check-3"></label>
                                                                     </div>
                                                                 </div>
@@ -2117,7 +2117,7 @@ export class SideBar extends Component {
                                                                 </div>
                                                                 <div className="col-auto">
                                                                     <div className="form-check form-switch">
-                                                                        <input className="form-check-input" type="checkbox" id="accordion-notifications-check-2" defaultChecked/>
+                                                                        <input className="form-check-input" type="checkbox" id="accordion-notifications-check-2" defaultChecked />
                                                                         <label className="form-check-label" htmlFor="accordion-notifications-check-2"></label>
                                                                     </div>
                                                                 </div>
@@ -2128,7 +2128,7 @@ export class SideBar extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                
+
                                     <div className="mt-8">
                                         <div className="d-flex align-items-center my-4 px-6">
                                             <small className="text-muted me-auto">Devices</small>
@@ -2167,6 +2167,7 @@ export class SideBar extends Component {
                                                         </div>
                                                     </li>
                                                 </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2174,8 +2175,7 @@ export class SideBar extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
-    </aside>
+            </aside>
 
         )
 

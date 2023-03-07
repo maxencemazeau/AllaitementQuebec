@@ -1,4 +1,5 @@
 import '../../../App';
+import './App2.css'
 import React, { Component } from "react";
 import Chat from './chat';
 import ListChat from './listChat';
@@ -13,9 +14,9 @@ export default class TableauDeBord extends Component {
 
   //
   ChangerId = (id) => {
-    this.setState({idChatSelectionne : id})
+    this.setState({ idChatSelectionne: id })
     console.log("chatid ", this.state.idChatSelectionne)
-    
+
   }
 
   render() {
@@ -24,12 +25,14 @@ export default class TableauDeBord extends Component {
         <div className="App">
           {/* <Nav /> */}
           <body>
-            <ListChat changerId={this.ChangerId} />
-            <Chat idChatSelectionne={this.state.idChatSelectionne}/>
-            {/* <Header></Header>
+            <div className="App2">
+              <ListChat changerId={this.ChangerId} />
+              <Chat idChatSelectionne={this.state.idChatSelectionne} />
+              {/* <Header></Header>
             <SideBar></SideBar>
            
             <Body></Body> */}
+            </div>
           </body>
         </div>
       </React.Fragment>
