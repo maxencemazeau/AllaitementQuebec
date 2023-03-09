@@ -1,3 +1,13 @@
+
+/*
+ nom du fichier : listChat.jsx
+ fonction: ce fichier affiche la liste des chats contenu dans la base de donnee
+
+ auteur : thanina adda.
+ modification par :
+
+*/
+
 import React, { Component } from "react";
 import axios from "axios";
 

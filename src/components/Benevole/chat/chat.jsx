@@ -1,3 +1,14 @@
+
+/*
+ nom du fichier : chat.jsx
+ fonction: ce fichier represente le chat en lui-meme, avec les messages contenu dans le chat( clavardage). 
+            on peut voir le cote benevole et parent. 
+
+ auteur : thanina adda.
+ modification par :
+
+*/
+
 import React, { Component } from "react";
 import axios from "axios";
 
