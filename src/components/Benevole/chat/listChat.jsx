@@ -21,6 +21,7 @@ export default class ListChat extends Component {
     render() {
         const { chats } = this.state
         return (
+            
             <React.Fragment>
                 <div className="main">
                     <table>

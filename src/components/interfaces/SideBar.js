@@ -17,7 +17,6 @@ export class SideBar extends Component {
                                         <h2 className="fw-bold m-0">Création d'un chat</h2>
                                     </div>
 
-
                                     <div className="mb-6">
                                         <div className="mb-5">
                                             <form action="#">
