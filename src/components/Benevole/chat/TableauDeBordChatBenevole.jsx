@@ -26,12 +26,10 @@ export default class TableauDeBord extends Component {
           {/* <Nav /> */}
           <body>
             <div className="App2">
+            <Header></Header>
               <ListChat changerId={this.ChangerId} />
               <Chat idChatSelectionne={this.state.idChatSelectionne} />
-              {/* <Header></Header>
-            <SideBar></SideBar>
-           
-            <Body></Body> */}
+              
             </div>
           </body>
         </div>
@@ -39,4 +37,3 @@ export default class TableauDeBord extends Component {
     );
   }
 }
-
