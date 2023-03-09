@@ -30,11 +30,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <div className="App2">
-        <Header />
-        <SideBar />
-        <Body />
-      </div> */}
+      
       <div >
         <Router>
           <div>
