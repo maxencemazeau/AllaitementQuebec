@@ -18,7 +18,7 @@ export default class Chat extends Component {
     }
 
     componentDidMount = () => {
-        axios.get('http://localhost:8080/discussionBenevole/' + this.props.idChatSelectionne)
+        axios.get('http://localhost:8080/api/Benevole/discussionBenevole/' + this.props.idChatSelectionne)
             .then(res => {
                 this.setState({
                     discussion: res.data
@@ -30,7 +30,7 @@ export default class Chat extends Component {
     componentDidUpdate(prevProps) {
         if (this.props.idChatSelectionne !== prevProps.idChatSelectionne) {
             console.log("will update")
-            axios.get('http://localhost:8080/discussionBenevole/' + this.props.idChatSelectionne)
+            axios.get('http://localhost:8080/api/Benevole/discussionBenevole/' + this.props.idChatSelectionne)
                 .then(res => {
                     this.setState({
                         discussion: res.data
@@ -165,7 +165,7 @@ export default class Chat extends Component {
                         {/* <!-- Chat: Files --> */}
 
                         {/* <!-- Chat: Form --> */}
-                        <form className="chat-form rounded-pill bg-dark" data-emoji-form="" action="http://localhost:8080/envoiMessage" method="post" >
+                        <form className="chat-form rounded-pill bg-dark" data-emoji-form="" action="http://localhost:8080/api/Benevole/envoiMessage" method="post" >
                             <div className="row align-items-center gx-0">
                                 <div className="col-auto">
                                     <a href="#" class="btn btn-icon btn-link text-body rounded-circle" id="dz-btn">
