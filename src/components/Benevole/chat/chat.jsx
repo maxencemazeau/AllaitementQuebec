@@ -79,7 +79,44 @@ export default class Chat extends Component {
                             <div class="py-6 py-lg-12">
 
 
-                            
+                                <div class="message">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-responsive">
+
+                                    </a>
+
+                                    <div class="message-inner">
+                                        <div class="message-body">
+                                            <div class="message-content">
+                                                <div class="message-text">
+                                                    {/* <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p> */}
+
+                                                    <blockquote class="blockquote overflow-hidden">
+                                                        <h6 class="text-reset text-truncate">William Wright</h6>
+                                                        <p class="small text-truncate">Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                                    </blockquote>
+                                                    <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                                </div>
+
+                                                <div class="message-action">
+                                                </div>
+                                            </div>
+
+                                            <div class="message-content">
+                                                <div class="message-text">
+                                                    <p>Send me the files please.</p>
+                                                </div>
+                                                <div class="message-action">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="message-footer">
+                                            <span class="extra-small text-muted">08:45 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 {discussion.map(message =>
                                     <div class="message message-out">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
