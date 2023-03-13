@@ -165,7 +165,7 @@ export default class Chat extends Component {
                         {/* <!-- Chat: Files --> */}
 
                         {/* <!-- Chat: Form --> */}
-                        <form className="chat-form rounded-pill bg-dark" data-emoji-form="" action="http://localhost:8080/api/Benevole/envoiMessage" method="post" >
+                        <form className="chat-form rounded-pill bg-dark" data-emoji-form="" action="http://localhost:8080/envoiMessage" method="post" >
                             <div className="row align-items-center gx-0">
                                 <div className="col-auto">
                                     <a href="#" class="btn btn-icon btn-link text-body rounded-circle" id="dz-btn">

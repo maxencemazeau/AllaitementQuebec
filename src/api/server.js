@@ -174,7 +174,7 @@ app.post('/connexionParent', function(req, res){
 
 // code cote benevole
 
-app.post('/api/Benevole/connexionBenevole', function(req, res){
+app.post('/connexionBenevole', function(req, res){
   const { login, password } = req.body;
   
   // SQL query to check if user exists and password is correct
@@ -199,7 +199,7 @@ app.post('/api/Benevole/connexionBenevole', function(req, res){
 });
 
 
-app.get('/api/Benevole/obtenirChat', function(req, res, next){ 
+app.get('/obtenirChat', function(req, res, next){ 
   res.locals.connection.query('Select id, dateDebut from chat', function(error, results, fields){
       if (error) throw error;
       res.json(results);

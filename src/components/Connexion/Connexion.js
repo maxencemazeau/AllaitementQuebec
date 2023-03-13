@@ -20,7 +20,7 @@ function Connexion() {
     const password = inputPassword.current.value;
     console.log(login);
     console.log(password);
-    axios.post("http://localhost:8080/api/Benevole/connexionBenevole", { login, password }).then((response) => {
+    axios.post("http://localhost:8080/connexionBenevole", { login, password }).then((response) => {
       sessionStorage.setItem('benevole', JSON.stringify(response.data));
       navigate('/TableauDeBordChatBenevole');
     });
