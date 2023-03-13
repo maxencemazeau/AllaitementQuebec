@@ -74,83 +74,83 @@ export default class Chat extends Component {
 
             <React.Fragment>
                 <main className="main">
-                    <div class="chat-body hide-scrollbar flex-1 h-100">
-                        <div class="chat-body-inner">
-                            <div class="py-6 py-lg-12">
+                    <div className="chat-body hide-scrollbar flex-1 h-100">
+                        <div className="chat-body-inner">
+                            <div className="py-6 py-lg-12">
 
 
-                                <div class="message">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-responsive">
+                                <div className="message">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" className="avatar avatar-responsive">
 
                                     </a>
 
-                                    <div class="message-inner">
-                                        <div class="message-body">
-                                            <div class="message-content">
-                                                <div class="message-text">
+                                    <div className="message-inner">
+                                        <div className="message-body">
+                                            <div className="message-content">
+                                                <div className="message-text">
                                                     {/* <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p> */}
 
-                                                    <blockquote class="blockquote overflow-hidden">
-                                                        <h6 class="text-reset text-truncate">William Wright</h6>
-                                                        <p class="small text-truncate">Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                                    <blockquote className="blockquote overflow-hidden">
+                                                        <h6 className="text-reset text-truncate">William Wright</h6>
+                                                        <p className="small text-truncate">Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
                                                     </blockquote>
                                                     <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
                                                 </div>
 
-                                                <div class="message-action">
+                                                <div className="message-action">
                                                 </div>
                                             </div>
 
-                                            <div class="message-content">
-                                                <div class="message-text">
+                                            <div className="message-content">
+                                                <div className="message-text">
                                                     <p>Send me the files please.</p>
                                                 </div>
-                                                <div class="message-action">
+                                                <div className="message-action">
 
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="message-footer">
-                                            <span class="extra-small text-muted">08:45 PM</span>
+                                        <div className="message-footer">
+                                            <span className="extra-small text-muted">08:45 PM</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 {discussion.map(message =>
-                                    <div class="message message-out">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
+                                    <div className="message message-out">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" className="avatar avatar-responsive">
 
                                         </a>
 
-                                        <div class="message-inner">
-                                            <div class="message-body">
-                                                <div class="message-content">
-                                                    <div class="message-text">
-                                                        <blockquote class="blockquote overflow-hidden">
-                                                            <h6 class="text-reset text-truncate">William Wright</h6>
-                                                            <p class="small text-truncate">{message.message}</p>
+                                        <div className="message-inner">
+                                            <div className="message-body">
+                                                <div className="message-content">
+                                                    <div className="message-text">
+                                                        <blockquote className="blockquote overflow-hidden">
+                                                            <h6 className="text-reset text-truncate">William Wright</h6>
+                                                            <p className="small text-truncate">{message.message}</p>
                                                         </blockquote>
                                                         <p> Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
                                                         {/* <p>{message.message} </p> */}
                                                     </div>
 
 
-                                                    <div class="message-action">
+                                                    <div className="message-action">
 
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="message-footer">
-                                                <span class="extra-small text-muted">08:45 PM</span>
+                                            <div className="message-footer">
+                                                <span className="extra-small text-muted">08:45 PM</span>
                                             </div>
                                         </div>
                                     </div>
                                 )}
 
-                                <div class="message-divider">
-                                    <small class="text-muted">Monday, Sep 16</small>
+                                <div className="message-divider">
+                                    <small className="text-muted">Monday, Sep 16</small>
                                 </div>
 
                             </div>
@@ -168,7 +168,7 @@ export default class Chat extends Component {
                         <form className="chat-form rounded-pill bg-dark" data-emoji-form="" action="http://localhost:8080/envoiMessage" method="post" >
                             <div className="row align-items-center gx-0">
                                 <div className="col-auto">
-                                    <a href="#" class="btn btn-icon btn-link text-body rounded-circle" id="dz-btn">
+                                    <a href="#" className="btn btn-icon btn-link text-body rounded-circle" id="dz-btn">
                                         {/* @@include("assets/img/icons/paperclip.svg") */}
                                     </a>
                                 </div>
